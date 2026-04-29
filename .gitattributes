@@ -1,0 +1,6 @@
+# Linux 컨테이너에서 실행되는 셸·엔트리포인트는 LF 강제
+*.sh text eol=lf
+backend/start.sh text eol=lf
+
+# 텍스트 파일은 정상 처리
+* text=auto

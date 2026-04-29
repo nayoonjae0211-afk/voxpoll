@@ -17,7 +17,9 @@ if [[ ! -d /app/data/chroma ]] || [[ -z "$(ls -A /app/data/chroma 2>/dev/null)" 
   python -m app.rag.ingest --reset || echo "[start] ingestion failed (계속 진행)"
 fi
 
-mode="${1:-api}"
+# 모드 결정: SERVICE_MODE 환경변수 > 첫 인자 > 기본 'api'.
+# Railway 같은 멀티서비스 환경에선 서비스마다 SERVICE_MODE 만 다르게 잡아주면 분기됨.
+mode="${SERVICE_MODE:-${1:-api}}"
 case "$mode" in
   api)
     exec python -m uvicorn app.main:app --host 0.0.0.0 --port "${PORT:-8000}"

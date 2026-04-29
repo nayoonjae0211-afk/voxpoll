@@ -1,0 +1,10 @@
+# Railway 빌드 설정 — backend 디렉토리를 root로 잡고 Dockerfile 사용.
+# 두 서비스(api / agent)를 같은 Dockerfile + 다른 startCommand로 띄운다.
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(python -m venv .venv)",
+      "Bash(.venv/Scripts/python.exe -m pip install -r requirements.txt)",
+      "Bash(npm install *)",
+      "WebSearch",
+      "WebFetch(domain:interroid.com)",
+      "Bash(.venv/Scripts/python.exe -c \"from app.main import app; print\\('OK', [r.path for r in app.routes if hasattr\\(r, 'path'\\)][:10]\\)\")",
+      "Bash(npx tsc *)",
+      "Bash(./node_modules/.bin/tsc --noEmit)",
+      "Bash(grep -E \"^\\(tsc|next\\)$\")",
+      "Bash(node_modules/.bin/tsc.cmd --noEmit)",
+      "Bash(.venv/Scripts/python.exe -m app.rag.ingest --reset --collection interloid)",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m app.rag.ingest --reset --collection interloid)",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://127.0.0.1:8000/api/health)",
+      "Bash(curl -s -N -X POST http://127.0.0.1:8000/api/chat -H \"Content-Type: application/json\" -d '{\"question\":\"인터로이드는 어떤 회사야?\",\"history\":[]}')",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000)",
+      "Bash(curl -s -N -X POST http://127.0.0.1:8000/api/chat -H \"Content-Type: application/json\" -d '{\"question\":\"인터로이드는 어떤 회사야?\",\"history\":[]}' --max-time 45)",
+      "Bash(curl *)",
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"from app.main import app; from app.callbot.agent import SurveyAgent; print\\('routes:', [r.path for r in app.routes if hasattr\\(r, 'path'\\)]\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m app.callbot.agent dev)"
+    ]
+  }
+}

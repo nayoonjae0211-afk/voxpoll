@@ -3,6 +3,19 @@
 > (주)인터로이드 "LLM 기반 챗봇/콜봇 개발자" 공고 지원 포트폴리오.
 > 한 화면에서 **RAG 챗봇**과 **OB 설문조사 콜봇**을 동시에 시연하도록 설계.
 
+## 🔗 라이브 데모
+
+- **웹앱**: https://voxpoll-two.vercel.app
+- **백엔드 API**: https://protective-gentleness-production.up.railway.app
+- **GitHub**: https://github.com/nayoonjae0211-afk/voxpoll
+
+| 화면 | URL |
+|---|---|
+| 랜딩 (공고 매핑·아키텍처) | https://voxpoll-two.vercel.app |
+| 챗봇 (인터로이드 회사 RAG) | https://voxpoll-two.vercel.app/chat |
+| 콜봇 (VoxPoll 시장조사 OB) | https://voxpoll-two.vercel.app/call |
+| 응답 대시보드 | https://voxpoll-two.vercel.app/dashboard |
+
 ## 데모 구성
 
 | 영역 | 설명 |

@@ -97,7 +97,7 @@ export default function CallPage() {
 
             <div className="mt-8 text-body-sm text-text-muted space-y-1.5">
               <p>· 마이크 사용 권한을 묻는 팝업이 뜨면 허용해주세요.</p>
-              <p>· 가상 신제품 'VoxPoll'에 대한 시장조사를 가정합니다.</p>
+              <p>· 가상 신제품 &lsquo;VoxPoll&rsquo;에 대한 시장조사를 가정합니다.</p>
               <p>· 답변은 자유롭게 한국어로 말씀하시면 됩니다.</p>
             </div>
           </section>

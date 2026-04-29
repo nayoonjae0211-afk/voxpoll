@@ -23,7 +23,19 @@
       "Bash(curl *)",
       "Bash(.venv/Scripts/python.exe -c ' *)",
       "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"from app.main import app; from app.callbot.agent import SurveyAgent; print\\('routes:', [r.path for r in app.routes if hasattr\\(r, 'path'\\)]\\)\")",
-      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m app.callbot.agent dev)"
+      "Bash(PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m app.callbot.agent dev)",
+      "Bash(gh repo *)",
+      "Bash(railway --version)",
+      "Bash(railway whoami *)",
+      "Bash(railway list *)",
+      "Bash(railway link *)",
+      "Bash(railway status *)",
+      "Bash(railway variables *)",
+      "Bash(MSYS_NO_PATHCONV=1 railway variables --kv)",
+      "Bash(railway domain *)",
+      "Bash(railway logs *)",
+      "Bash(railway up *)",
+      "Bash(railway redeploy *)"
     ]
   }
 }
